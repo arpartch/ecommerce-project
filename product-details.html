@@ -33,7 +33,7 @@
 <div class="small-container single-product">
     <div class="row">
         <div class="col-2">
-            <img src="./images/gallery-1.jpg" width="100%" id="product-img">
+            <img src="./images/gallery-1.jpg" width="100%" id="productImg">
 
             <div class="small-img-row">
                 <div class="small-img-col">
@@ -72,7 +72,15 @@
     </div>
 </div>
 
+<!-- title -->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
 
+<!-- products -->
 
     <div class="small-container">
         <div class="row">
@@ -181,6 +189,31 @@
             MenuItems.style.maxHeight = "0px";
         }
     }
+</script>
+
+<!-- JS for product gallery -->
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function()
+        {
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function()
+        {
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function()
+        {
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function()
+        {
+            productImg.src = smallImg[3].src;
+        }
+
+
 </script>
 </body>
 </html>
